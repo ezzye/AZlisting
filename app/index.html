@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="azlist">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A-Z Listing Web Page</title>
+    <meta name="description" content="Website for A to Z TV Listings">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body ng-controller="azlistCtrl">
+    <h1>Lists of Programmes Sorted Alphabetically</h1>
+    <h2>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h2>
+    <h2>Programs Starting with: A</h2>
+    <h2>Programme Titles and Images</h2>
+    <h3>Pages 1 2 3</h3>
+      <ul>
+        <li>{{hello}}</li>
+      </ul>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
