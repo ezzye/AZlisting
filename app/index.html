@@ -10,14 +10,37 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body ng-controller="azlistCtrl">
-    <h1>Lists of Programmes Sorted Alphabetically</h1>
-    <h2>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h2>
-    <h2>Programs Starting with: A</h2>
-    <h2>Programme Titles and Images</h2>
-    <h3>Pages 1 2 3</h3>
-      <ul>
-        <li>{{hello}}</li>
-      </ul>
+    <div class="container">
+      <h1>Lists of Programmes Sorted Alphabetically</h1>
+      <div class="btn-group">
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'A'">A</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'B'">B</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'C'">C</label>
+      </div>
+
+      <h3 id="StartingLetter">Programmes Starting with: {{radioModel}}</h3>
+      <h4 id="PageNumber">Page: {{currentPage}}</h4>
+      <table class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th><h4>Programme Title</h4></th><th><h4>Image from Programme</h4></th>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in items">
+            <td>{{item.title}}</td><td><img ng-src="{{item.images.standard}}"/></td>
+            </tr>
+          </tbody>
+        </table>
+      </table>
+
+      <uib-pagination
+        ng-model="currentPage"
+        total-items="numberOfItems"
+        max-size="maxSize"
+        boundary-links="true">
+      </uib-pagination>
+
+    </div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
