@@ -32,7 +32,7 @@ azlist.controller('azlistCtrl',['$scope','getazlist',function($scope,getazlist) 
 azlist.factory('getazlist',['$http',function($http) {
   return {
     filteredlist: function(letter,page) {
-      return $http.get('http://localhost/programme?letter=' + letter.toLowerCase() + '&page=' + page );
+      return $http.get('/programme?letter=' + letter.toLowerCase() + '&page=' + page );
     }
   };
 }]);
