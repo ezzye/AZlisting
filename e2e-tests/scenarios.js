@@ -9,7 +9,7 @@ describe('listing page',function() {
 
 
   it('load page 1 for A initally',function() {
-    browser.get('http://localhost:8000/app');
+    browser.get('http://localhost/app');
     var pageLetter=element(by.id('StartingLetter'));
     var pageNumber=element(by.id('PageNumber'));
     expect(pageLetter.getText()).toEqual('Programmes Starting with: A');
