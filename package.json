@@ -1,6 +1,10 @@
 {
   "name": "azlisting",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.0.0",
+    "npm": "3.5.3"
+  },
   "description": "Website for A to Z Webpage Listing",
   "main": "app.js",
   "scripts": {
