@@ -16,6 +16,29 @@
       <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'A'">A</label>
       <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'B'">B</label>
       <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'C'">C</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'D'">D</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'E'">E</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'F'">F</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'G'">G</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'H'">H</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'I'">I</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'J'">J</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'K'">K</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'L'">L</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'M'">M</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'N'">N</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'O'">O</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'P'">P</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Q'">Q</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'R'">R</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'S'">S</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'T'">T</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'U'">U</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'V'">V</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'W'">W</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'X'">X</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Y'">Y</label>
+      <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Z'">Z</label>
       </div>
 
       <h3 id="StartingLetter">Programmes Starting with: {{radioModel}}</h3>
@@ -27,7 +50,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="item in items">
-            <td>{{item.title}}</td><td><img ng-src="{{item.images.standard}}"/></td>
+            <td>{{item.title}}</td><td><img ng-src="{{item.image}}"/></td>
             </tr>
           </tbody>
         </table>
@@ -37,10 +60,12 @@
         ng-model="currentPage"
         total-items="numberOfItems"
         max-size="maxSize"
-        boundary-links="true">
+        boundary-links="true"
+        >
       </uib-pagination>
 
     </div>
+
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
